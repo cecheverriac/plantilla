@@ -11,7 +11,7 @@ header-includes:
 - \usetikzlibrary{positioning,shapes,shadows}
 - \usepackage{fancyhdr}
 - \pagestyle{fancy}
-- \fancyhead[RO]{\scalebox{0.2}{\includegraphics{`r here::here("logo.png")`}}}
+- \fancyhead[RO]{\scalebox{0.2}{\includegraphics{`r system.file("logo/logo.png", package = "plantilla")`}}}
 output: beamer_presentation
 ---
 
