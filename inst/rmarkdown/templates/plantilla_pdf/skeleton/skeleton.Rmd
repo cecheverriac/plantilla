@@ -26,10 +26,20 @@ header-includes:
     - \usepackage{draftwatermark} 
     - \usepackage{eso-pic}
     - \pagestyle{fancy}
-    - \fancyhead[LO]{\scalebox{0.2}{\includegraphics{`r system.file("logo/logo.png", package = "plantilla")`}}}
-    - \fancyhead[RO]{\thepage}
+    - \fancyhead[L]{\scalebox{0.35}{\includegraphics{r system.file("logo/logo.png", package = "plantilla")}}}
+    - \fancyhead[R]{Validaciones $\bullet$ 2025. Pag. \thepage}
+    - \fancyfoot[C]{}
+papersize: letter
+fontsize: 12pt
 output: pdf_document
 ---
+
+\addtolength{\headheight}{1.3cm} 
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabla}
+
+\SetWatermarkText{DOCUMENTO DE TRABAJO DEMRE}
+  \SetWatermarkFontSize{1.5cm}
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
