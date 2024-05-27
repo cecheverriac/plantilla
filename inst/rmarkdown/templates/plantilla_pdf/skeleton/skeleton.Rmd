@@ -1,0 +1,43 @@
+---
+title: "Validación de Bases de Datos"
+author: "Unidad de Análisis - DEMRE"
+date: "Fecha"
+header-includes:
+    - \usepackage[utf8]{inputenc}
+    - \usepackage{spanish}
+    - \usepackage{booktabs}
+    - \usepackage{longtable}
+    - \usepackage{array}
+    - \usepackage{multirow}
+    - \usepackage{wrapfig}
+    - \usepackage{float}
+    - \floatplacement{figure, table}{ht}
+    - \usepackage{color}
+    - \usepackage{colortbl}
+    - \usepackage{pdflscape}
+    - \usepackage{threeparttable}
+    - \usepackage{threeparttablex}
+    - \usepackage[normalem]{ulem}
+    - \usepackage{makecell}
+    - \usepackage{xcolor}
+    - \usepackage[shortlabels]{enumitem}
+    - \usepackage{fancyhdr}
+    - \usepackage[font=footnotesize,position=bottom,labelfont = bf]{caption}
+    - \usepackage{draftwatermark} 
+    - \usepackage{eso-pic}
+    - \pagestyle{fancy}
+    - \fancyhead[RO]{\scalebox{0.2}{\includegraphics{`r system.file("logo/logo.png", package = "plantilla")`}}}
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Adding an RMarkdown Template
+
+This file is what a user will see when they select your template. Make sure that you update the fields in the yaml header. In particular you will want to update the `output` field to whatever format your template requires.
+
+This is a good place to demonstrate special features that your template provides. Ideally it should knit out-of-the-box, or at least contain clear instructions as to what needs changing.
+
+Finally, be sure to remove this message!
