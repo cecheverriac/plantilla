@@ -26,8 +26,8 @@ header-includes:
     - \usepackage{draftwatermark} 
     - \usepackage{eso-pic}
     - \pagestyle{fancy}
-    - \fancyhead[LH]{\scalebox{0.3}{\includegraphics{`r system.file("logo/logo.png", package = "plantilla")`}}}
-    - \fancyhead[RH]{\thepage}
+    - \fancyhead[LO]{\scalebox{0.2}{\includegraphics{`r system.file("logo/logo.png", package = "plantilla")`}}}
+    - \fancyhead[RO]{\thepage}
 output: pdf_document
 ---
 
