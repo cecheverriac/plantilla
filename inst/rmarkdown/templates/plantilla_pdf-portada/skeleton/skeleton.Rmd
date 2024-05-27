@@ -1,0 +1,73 @@
+---
+header-includes:
+    - \usepackage[spanish]{babel}
+    - \usepackage[utf8]{inputenc}
+    - \usepackage{booktabs}
+    - \usepackage{longtable}
+    - \usepackage{array}
+    - \usepackage{multirow}
+    - \usepackage{wrapfig}
+    - \usepackage{float}
+    - \floatplacement{figure, table}{ht}
+    - \usepackage{color}
+    - \usepackage{colortbl}
+    - \usepackage{pdflscape}
+    - \usepackage{threeparttable}
+    - \usepackage{threeparttablex}
+    - \usepackage[normalem]{ulem}
+    - \usepackage{makecell}
+    - \usepackage{xcolor}
+    - \usepackage[shortlabels]{enumitem}
+    - \usepackage{fancyhdr}
+    - \usepackage[font=footnotesize,position=bottom,labelfont = bf]{caption}
+    - \usepackage{draftwatermark} 
+    - \usepackage{eso-pic}
+    - \pagestyle{fancy}
+    - \fancyhead[L]{\scalebox{0.35}{\includegraphics{`r system.file("logo/logo.png", package = "plantilla")`}}}
+    - \fancyhead[R]{Validaciones $\bullet$ 2025. Pag. \thepage}
+    - \fancyfoot[C]{}
+papersize: letter
+fontsize: 12pt
+output: pdf_document
+---
+
+<!-- Modificaciones iniciales  -->
+
+\addtolength{\headheight}{1.3cm} 
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabla}
+
+\SetWatermarkText{DOCUMENTO DE TRABAJO DEMRE}
+  \SetWatermarkFontSize{1.5cm}
+  
+<!-- Inicio del documento -->
+
+\noindent\begin{minipage}[b]{.3\textwidth}
+\end{minipage} 
+\hfill
+\begin{minipage}[b]{.8\textwidth}
+\hspace{0.5cm}\vspace{7cm}
+\begin{center}          
+{\huge \color{white}{ 
+          Validación de Bases de Datos \\
+          \phantom{} \\
+          \phantom{} \\
+          Unidad de Análisis - DEMRE \\
+          \phantom{} \\
+          Fecha}}
+\end{center}  
+\end{minipage}
+\AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{`r system.file("portada/Portada.pdf", package = "plantilla")`}}
+\thispagestyle{empty}
+\clearpage
+  
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Título 1
+
+\newpage
+
+## Título 2

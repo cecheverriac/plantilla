@@ -1,0 +1,20 @@
+---
+title: "Revisión de Ensamblaje Prueba PAES enfocado a Admisión "
+subtitle: "Alguna Prueba"
+author: "Unidad de Análisis - DEMRE"
+date: "Fecha"
+header-includes:
+- \usepackage{xcolor}
+- \usepackage{booktabs}
+- \usepackage{scalefnt}
+- \usepackage{tikz}
+- \usetikzlibrary{positioning,shapes,shadows}
+- \usepackage{fancyhdr}
+- \pagestyle{fancy}
+- \fancyhead[RO]{\scalebox{0.2}{\includegraphics{`r system.file("logo/logo.png", package = "plantilla")`}}}
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
