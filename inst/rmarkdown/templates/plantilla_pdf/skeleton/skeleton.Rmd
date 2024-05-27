@@ -3,8 +3,8 @@ title: "Validación de Bases de Datos"
 author: "Unidad de Análisis - DEMRE"
 date: "Fecha"
 header-includes:
+    - \usepackage[spanish]{babel}
     - \usepackage[utf8]{inputenc}
-    - \usepackage{spanish}
     - \usepackage{booktabs}
     - \usepackage{longtable}
     - \usepackage{array}
@@ -26,7 +26,8 @@ header-includes:
     - \usepackage{draftwatermark} 
     - \usepackage{eso-pic}
     - \pagestyle{fancy}
-    - \fancyhead[RO]{\scalebox{0.2}{\includegraphics{`r system.file("logo/logo.png", package = "plantilla")`}}}
+    - \fancyhead[LH]{\scalebox{0.3}{\includegraphics{`r system.file("logo/logo.png", package = "plantilla")`}}}
+    - \fancyhead[RH]{\thepage}
 output: pdf_document
 ---
 
@@ -34,10 +35,8 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Adding an RMarkdown Template
+## Título 1
 
-This file is what a user will see when they select your template. Make sure that you update the fields in the yaml header. In particular you will want to update the `output` field to whatever format your template requires.
+\newpage
 
-This is a good place to demonstrate special features that your template provides. Ideally it should knit out-of-the-box, or at least contain clear instructions as to what needs changing.
-
-Finally, be sure to remove this message!
+## Título 2
