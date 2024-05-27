@@ -26,7 +26,7 @@ header-includes:
     - \usepackage{draftwatermark} 
     - \usepackage{eso-pic}
     - \pagestyle{fancy}
-    - \fancyhead[L]{\scalebox{0.35}{\includegraphics{r system.file("logo/logo.png", package = "plantilla")}}}
+    - \fancyhead[L]{\scalebox{0.35}{\includegraphics{`r system.file("logo/logo.png", package = "plantilla")`}}}
     - \fancyhead[R]{Validaciones $\bullet$ 2025. Pag. \thepage}
     - \fancyfoot[C]{}
 papersize: letter
