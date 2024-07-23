@@ -1,5 +1,7 @@
 ---
-title: "Comportamiento de ítems Admisión 2025-Invierno"
+title: |
+    | Comportamiento de ítems Admisión 
+    | 2025-Invierno
 subtitle: "Prueba"
 author: "Unidad de Análisis de Datos"
 date: "Algún Día"
@@ -10,14 +12,15 @@ output:
     toc_float:
       collapsed: true
       smooth_scroll: true
+self-contained: true
 ---
 
 ```{r, echo=FALSE}
 htmltools::img(src = knitr::image_uri(system.file("logo/logo.png", package = "plantilla")), 
                alt = 'logo', 
                style = 'position:absolute; top:0; right:0; padding:10px;',
-               width = "300px",
-               heigth = "300px")
+               width = "200px",
+               heigth = "200px")
 ```
 
 ## Título 1
